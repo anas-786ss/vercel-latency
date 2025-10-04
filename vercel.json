@@ -1,0 +1,17 @@
+{
+  "builds": [
+    {
+      "src": "api/index.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/analytics",
+      "methods": [
+        "POST"
+      ],
+      "dest": "api/index.py"
+    }
+  ]
+}
